@@ -13,6 +13,10 @@
 		CAAD8DE828621E6C0095F7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8DE628621E6C0095F7E2 /* Main.storyboard */; };
 		CAAD8DEA28621E6D0095F7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8DE928621E6D0095F7E2 /* Assets.xcassets */; };
 		CAAD8DED28621E6D0095F7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8DEB28621E6D0095F7E2 /* LaunchScreen.storyboard */; };
+		CAAD8DF528621EEB0095F7E2 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8DF428621EEB0095F7E2 /* CustomCollectionView.swift */; };
+		CAAD8DF728621F180095F7E2 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8DF628621F180095F7E2 /* CustomCollectionViewCell.swift */; };
+		CAAD8DFB28621F700095F7E2 /* MediumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD8DF928621F700095F7E2 /* MediumButton.swift */; };
+		CAAD8DFC28621F700095F7E2 /* MediumButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAD8DFA28621F700095F7E2 /* MediumButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CAAD8DE928621E6D0095F7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAAD8DEC28621E6D0095F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAAD8DEE28621E6D0095F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAAD8DF428621EEB0095F7E2 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		CAAD8DF628621F180095F7E2 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAAD8DF928621F700095F7E2 /* MediumButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumButton.swift; sourceTree = "<group>"; };
+		CAAD8DFA28621F700095F7E2 /* MediumButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediumButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		CAAD8DDF28621E6C0095F7E2 /* CollectionViewCustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				CAAD8DF828621F700095F7E2 /* MediumButton */,
+				CAAD8DF628621F180095F7E2 /* CustomCollectionViewCell.swift */,
 				CAAD8DE028621E6C0095F7E2 /* AppDelegate.swift */,
 				CAAD8DE228621E6C0095F7E2 /* SceneDelegate.swift */,
 				CAAD8DE428621E6C0095F7E2 /* ViewController.swift */,
@@ -63,8 +73,18 @@
 				CAAD8DE928621E6D0095F7E2 /* Assets.xcassets */,
 				CAAD8DEB28621E6D0095F7E2 /* LaunchScreen.storyboard */,
 				CAAD8DEE28621E6D0095F7E2 /* Info.plist */,
+				CAAD8DF428621EEB0095F7E2 /* CustomCollectionView.swift */,
 			);
 			path = CollectionViewCustomComponent;
+			sourceTree = "<group>";
+		};
+		CAAD8DF828621F700095F7E2 /* MediumButton */ = {
+			isa = PBXGroup;
+			children = (
+				CAAD8DF928621F700095F7E2 /* MediumButton.swift */,
+				CAAD8DFA28621F700095F7E2 /* MediumButton.xib */,
+			);
+			path = MediumButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +147,7 @@
 			files = (
 				CAAD8DED28621E6D0095F7E2 /* LaunchScreen.storyboard in Resources */,
 				CAAD8DEA28621E6D0095F7E2 /* Assets.xcassets in Resources */,
+				CAAD8DFC28621F700095F7E2 /* MediumButton.xib in Resources */,
 				CAAD8DE828621E6C0095F7E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAD8DFB28621F700095F7E2 /* MediumButton.swift in Sources */,
 				CAAD8DE528621E6C0095F7E2 /* ViewController.swift in Sources */,
+				CAAD8DF728621F180095F7E2 /* CustomCollectionViewCell.swift in Sources */,
 				CAAD8DE128621E6C0095F7E2 /* AppDelegate.swift in Sources */,
 				CAAD8DE328621E6C0095F7E2 /* SceneDelegate.swift in Sources */,
+				CAAD8DF528621EEB0095F7E2 /* CustomCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomComponent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Collection View with Custom Component";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionViewCustomComponent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Collection View with Custom Component";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
